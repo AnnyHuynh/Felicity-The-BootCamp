@@ -1,0 +1,29 @@
+<div class="login-page">
+  <div class="form">
+    <form class="register-form" id="signup" name="signup" method="post" action="signup">
+      <input class="text" name="username" type="text" placeholder="username" />
+      <input name="password" type="password" placeholder="password" />
+      <input class="text" name="email" type="text" placeholder="email address" />
+      <input class="text" name="firstname" type="text" placeholder="First Name" />
+      <input class="text" name="lastname" type="text" placeholder="Last Name" />
+      <button type="submit" value="Sign Up">create</button>
+      <p class="message">Already registered? <a href="#" onclick="toggleVisibility('signup');">Sign In</a></p>
+    </form>
+    <form class="login-form" id="signin" name="signin" method="post" action="signin">
+      <input class="text" name="username" type="text" placeholder="username" />
+      <input name="password" type="password" placeholder="password" />
+      <button type="submit" value="Sign In">login</button>
+
+      <p class="message">Not registered? <a href="#" onclick="toggleVisibility('signin');">Create an account</a></p>
+
+    </form>
+  </div>
+</div>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="/js/index.js"></script>
+<script>
+    $(document).ready(function () {
+    $('body').css('background-image', 'url(/images/Banyan.jpg)');
+  });
+</script>

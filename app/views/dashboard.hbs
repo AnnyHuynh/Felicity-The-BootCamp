@@ -1,0 +1,147 @@
+<div class="header">
+    <a href="#default" class="logo">Felicity: The Bootcamp Branch</a>
+    <div class="header-right">
+        <form id="logout" name="logout" action="logout">
+            <button class="btn navbar-btn">Logout</button>
+        </form>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="row user text-center">
+            <h3><span class="userinfodisplay">{{user.username}}</span></h3>
+            <h4 id="email-address">{{user.email}}</h4>
+            <hr class="base1">
+            <div>
+                <h4><span class="userprefrencesheader"> Your Current Group Prefrences
+                        <span class="message" style="float: right"><a href="#"
+                                onclick="toggleVisibility('userprofile');">Edit</a></span>
+                    </span></h4>
+            </div>
+            <hr class="base2">
+            <span class="userprefrencesdisplay">
+                <i class="fa  fa-book"></i> {{user.preferredtopic}} &nbsp;&nbsp;&nbsp;
+                <i class="fa  fa-map-marker"></i> {{user.preferredlocation}} &nbsp;&nbsp;&nbsp;
+                <i class="fa  fa-calendar"></i> {{user.preferredday}} &nbsp;&nbsp;&nbsp;
+                <i class="fa  fa-clock-o"></i> {{user.preferredtime}}
+            </span>
+            <br><br>
+            <hr class="base2">
+            <h4><span class="userprefrencesheader">Your Groups</span></h4>
+            <hr class="base2">
+            {{#each user.groups }}
+            <div class="chip">
+                <span class="usergroupname"><i class="fa  fa-group"></i> {{groupname}}</span>
+                <span class="userloctopic"><i class="fa  fa-map-marker"></i> {{grouplocation}}
+                    <i class="fa  fa-book"></i> {{grouptopic}} </span>
+                <span class="closebtn" onclick="this.parentElement.style.display='none'">&times;</span>
+            </div>
+            {{/each}}
+        </div>
+
+        <div class="row findgroups text-center">
+            <form name="findgroups" method="post" action="groups">
+                <input type="hidden" value={{user}} name="findgroupsUser">
+                <button class="btn navbar-btn">Find Groups</button>
+            </form>
+
+            <div class="row">
+                {{#each group }}
+                <div class="chip">
+                    <span class="usergroupname"><i class="fa  fa-group"></i> {{groupname}}</span>
+                    <span class="userloctopic"><i class="fa  fa-map-marker"></i> {{grouplocation}}
+                        <i class="fa  fa-book"></i> {{grouptopic}} </span>
+                    <span class="closebtn" onclick="this.parentElement.style.display='none'">&#x2714;</span>
+                </div>
+                <p></p>
+                {{/each}}
+            </div>
+        </div>
+
+        <div class="row prefrences text-center">
+            <form id="userprofile" class="prefrences-form" name="userprofile" method="post" action="save">
+                <div>
+                    <h4><span class="userprefrencesheader">Update Your Prefrences</span>
+                    <hr class="base2">
+                    <input type="hidden" value={{user.id}} name="userid">
+                    <h4> Choose your preferred location</h4>
+                    <div>
+                        <label class="radio-inline">
+                            <input type="radio" name="location" value="Bellevue">Bellevue
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="location" value="South Seattle">South Seattle
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="location" value="North Seattle">North Seattle
+                        </label>
+                    </div>
+                    <h4> Choose your preferred topic</h4>
+                    <div>
+                        <label class="radio-inline">
+                            <input type="radio" name="topic" value="Javascript">Javascript
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="topic" value="Front End Technologies">Front End Technologies
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="topic" value="Back End Technologies">Back End Technologies
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="topic" value="DataStructure and Algorithms">DataStructure and
+                            Algorithms
+                        </label>
+                    </div>
+                    <h4> Choose your preferred day</h4>
+                    <div>
+                        <label class="radio-inline">
+                            <input type="radio" name="weekday" value="Monday">Monday
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="weekday" value="Tuesday">Tuesday
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="weekday" value="Wednesday">Wednesday
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="weekday" value="Thursday">Thursday
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="weekday" value="Friday">Friday
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="weekday" value="Saturday">Saturday
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="weekday" value="Sunday">Sunday
+                        </label>
+                    </div>
+                    <h4> Choose your preferred time</h4>
+                    <div>
+                        <label class="radio-inline">
+                            <input type="radio" name="time" value="Morning (8am - 12pm)">Morning (8am - 12pm)
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="time" value="Noon (12pm - 4pm)">Noon (12pm - 4pm)
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="time" value="Evening (4pm - 7pm)">Evening (4pm - 7pm)
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="time" value="Late Evening (7pm - 9pm)">Late Evening (7pm -
+                            9pm)
+                        </label>
+                    </div>
+                    <br><br>
+                    <!-- Submit Button -->
+                    <div>
+                        <button type="submit" class="btn navbar-btn saveprofilebutton">Save</button>
+                        <button onclick="toggleVisibility('userprofile');" class="btn navbar-btn saveprofilebutton">Cancel</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="/js/index.js"></script>
