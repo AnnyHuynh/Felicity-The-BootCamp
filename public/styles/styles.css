@@ -46,11 +46,11 @@ button:hover,button:active,button:focus {
 }
 .form .message {
   margin: 15px 0 0;
-  color: #b3b3b3;
+  color: rgb(61, 56, 56);
   font-size: 12px;
 }
 .form .message a {
-  color: rgba(247, 124, 10, 0.712);
+  color: rgba(179, 59, 3, 0.822);
   text-decoration: none;
 }
 .form .register-form {
@@ -80,9 +80,10 @@ button:hover,button:active,button:focus {
 } 
 
 body{
-background-image: url(/images/Banyan.jpg);
-background-image: fixed; 
-  background-size: 100%;  
+background-image: url(/images/grouping4.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
   font-family: 'Neuton', serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;  

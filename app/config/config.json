@@ -1,7 +1,7 @@
 {
   "development": {
     "username": "root",
-    "password": null,
+    "password": "root",
     "database": "felicityDB",
     "host": "localhost",
     "dialect": "mysql",
@@ -9,7 +9,7 @@
   },
   "test": {
     "username": "root",
-    "password": null,
+    "password": "root",
     "database": "felicityTestDB",
     "host": "localhost",
     "dialect": "mysql",
