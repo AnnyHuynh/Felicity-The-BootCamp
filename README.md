@@ -43,9 +43,9 @@
 ## Deployment
 * Heroku
    * https://felicity-bootcamp-branch.herokuapp.com/   
-     [Home Page:](public/images/Homepage.jpg)
-     [Login/Register Page:](public/images/RegistPage.jpg)
-     [Profile Page:](public/images/ProfilePage.jpg)
+     [![Home Page: ](public/images/Homepage.jpg)]
+     [![Login/Register Page: ](public/images/RegistPage.jpg)]
+     [![Profile Page: ](public/images/ProfilePage.jpg)]
 
 ## Repository
 * [Anny's GitHub](https://github.com/AnnyHuynh/Felicity-The-BootCamp.git)
