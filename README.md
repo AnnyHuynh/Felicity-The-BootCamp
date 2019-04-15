@@ -41,7 +41,7 @@
 
 ## Deployment
 * Heroku
-   * https://felicity-bootcamp-branch.herokuapp.com/   
+   * https://felicity-bootcamp.herokuapp.com/  
      ![Home Page: ](public/images/Homepage.jpg)
      ![Login/Register Page: ](public/images/RegistPage.jpg)
      ![Profile Page: ](public/images/ProfilePage.jpg)
