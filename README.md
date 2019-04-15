@@ -63,5 +63,17 @@
     "passport-local": "^1.0.0",
     "sequelize": "^4.42.0"
 ```
+node-js
+express-handlebars
+MySQL
+sequelize
+api-routes
+ajax
+jquery
+authentication-strategy
+passportjs
+passport-js
+passport-local
+
 ## Project Page
 * wiki: https://annyhuynh.github.io/Felicity-The-BootCamp/
