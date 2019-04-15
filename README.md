@@ -4,13 +4,14 @@
 ## Team Wolves
 * Team Members
   * Ali Atri
-  * Anny
+  * Anny Huynh
   * Blake Mosebar
   * Cat Cohen
   * Mandeep Kaur
 
 ## Project Description
-* Our group named The Defenders. Our intent for this project is to create something that the class can use in the future Our incentive - our project is centered around innovation. Up until we were assigned study groups people were so reluctant to join study groups When the users sign up they can answer questions - prior experiences - where youre located - what part of coding you're interested in - whats your sign - what languages do you speak -
+* Our group named The Defenders. 
+* Our intent for this project is to create something that the class can use in the future. * Our incentive - our project is centered around innovation. Up until we were assigned study groups people were so reluctant to join study groups When the users sign up they can answer questions - prior experiences - where youre located - what part of coding you're interested in - whats your sign - what languages do you speak 
 
 ## Project Requirements 
 
@@ -42,9 +43,9 @@
 ## Deployment
 * Heroku
    * https://felicity-bootcamp-branch.herokuapp.com/   
-     [![Home Page](public/images/Homepage.jpg)]
-     [![Login/Register Page](public/images/RegistPage.jpg)]
-     [![Profile Page](public/images/ProfilePage.jpg)]
+     [Home Page:](public/images/Homepage.jpg)
+     [Login/Register Page:](public/images/RegistPage.jpg)
+     [Profile Page:](public/images/ProfilePage.jpg)
 
 ## Repository
 * [Anny's GitHub](https://github.com/AnnyHuynh/Felicity-The-BootCamp.git)
